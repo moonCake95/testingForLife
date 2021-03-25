@@ -59,8 +59,10 @@ body {
   right: 2.5rem;
 }
 
-.contactMe p {
-  color: #ffffff
+.contactMe a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .person-logo {
@@ -277,15 +279,9 @@ form button {
   html {
     font-size: 37.5%;
   }
-}
 
-@media (max-width: 25em) {
   .heading-primary-sub {
-    width: 100%;
-  }
-
-  .person-logo {
-    height: 10vh;
+    width: 92vw;
   }
 
   .contactMe {
@@ -298,8 +294,32 @@ form button {
   }
 
   .carousel-item p {
-    text-align: left;
-    width: 62%;
+    text-align: center;
+    width: 66%;
+  }
+}
+
+@media (max-width: 25em) {
+  .header {
+    height: 100vh;
+  }
+
+  .heading-primary-sub {
+    width: 85vw;
+  }
+
+  .contactMe {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+
+  .carousel-item h2 {
+    text-align: center;
+  }
+
+  .carousel-item p {
+    text-align: center;
+    width: 75%;
   }
 }
 
@@ -308,5 +328,6 @@ form button {
     font-size: 65%;
   }
 }
+
 /* Ubuntu google font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
