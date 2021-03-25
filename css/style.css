@@ -30,7 +30,7 @@ body {
     to right bottom, 
     hsla(0, 0%, 32%, 0.8), 
     hsla(0, 0%, 0%, 0.8)), 
-    url(/public/images/header-bg.jpg);
+    url(/images/header-bg.jpg);
   position: relative;
   transition: all .5s;
 }
@@ -106,7 +106,7 @@ body {
     to left bottom, 
     hsla(0, 0%, 100%, 0.9), 
     hsla(0, 0%, 86%, 0.9)),
-    url(/public/images/carousel-bg.jpg);
+    url(/images/carousel-bg.jpg);
 }
 
 .carousel-item {
