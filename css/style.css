@@ -386,6 +386,12 @@ form button {
   }
 }
 
+@media (max-width: 25em) {
+  .heading-primary-sub {
+    width: 100%;
+  }
+}
+
 @media (min-width: 112.5em) {
   html {
     font-size: 65%;
