@@ -59,9 +59,8 @@ body {
   right: 2.5rem;
 }
 
-.contactMe a {
+.contactMe p {
   color: #ffffff;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -161,6 +160,22 @@ form button {
   width: 100%;
 }
 
+.form .form-control {
+  border-radius: 3px;
+  transition: all .3s;
+  margin-bottom: .8rem;
+}
+
+.form .form-control:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+
+.form-control:focus:invalid {
+  border-bottom: 3px solid #ff3030; 
+}
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -254,11 +269,16 @@ form button {
   }
 }
 
+/* ///////////////////////////// 1200px //////////////////////////////////////  */
+
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 900px //////////////////////////////////////  */
 
 @media (max-width: 56.25em) {
   html {
@@ -275,53 +295,131 @@ form button {
   }
 }
 
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 600px //////////////////////////////////////  */
+
 @media (max-width: 37.5em) {
-  html {
-    font-size: 37.5%;
+  .header {
+    height: 135vh;
   }
 
   .heading-primary-sub {
-    width: 92vw;
+    width: 88vw;
+    padding: 3rem;
   }
 
   .contactMe {
     top: 4.5rem;
     right: 4.5rem;
+    font-size: 2rem;
+  }
+
+  .carousel-item {
+    padding: 1rem;
   }
 
   .carousel-item h2 {
     text-align: center;
+    font-size: 2rem;
   }
 
   .carousel-item p {
+    font-size: 1.6rem;
     text-align: center;
-    width: 66%;
+    width: 80%;
+  }
+
+  .form .heading {
+    font-size: 3.5rem;
+  }
+
+  .form-control {
+    height: 4.375rem;
+    font-size: 1.8rem;
+  }
+
+  input::placeholder {
+    font-size: 1.8rem;
+  }
+
+  textarea::placeholder {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 2rem;
   }
 }
 
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 400px //////////////////////////////////////  */
+
 @media (max-width: 25em) {
+
   .header {
-    height: 100vh;
+    height: 150vh;
+  }
+
+  .logo {
+    height: 6rem;
+  }
+
+  .contactMe {
+    font-size: 1.7rem;
+  }
+
+  .heading-primary-sub {
+    width: 87.5vw;
+    text-align: left;
+  }
+
+  .carousel-item p {
+    width: 86%;
+  }
+
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 384px //////////////////////////////////////  */
+
+@media (max-width: 24em) {
+
+  .header {
+    height: 190vh;
   }
 
   .heading-primary-sub {
     width: 85vw;
-  }
-
-  .contactMe {
-    top: 4.5rem;
-    right: 4.5rem;
-  }
-
-  .carousel-item h2 {
-    text-align: center;
+    padding: 1.5rem;
   }
 
   .carousel-item p {
-    text-align: center;
-    width: 75%;
+    width: 55%;
+  }
+
+  #carouselControls {
+    padding: 15rem 0 15rem 0;
+    background-position: right;
   }
 }
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 368px //////////////////////////////////////  */
+
+@media (max-width: 23em) {
+  .logo {
+    height: 5rem;
+  }
+
+  .contactMe {
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////// 1800+px //////////////////////////////////////  */
 
 @media (min-width: 112.5em) {
   html {

@@ -18,7 +18,7 @@
       <img src="images/company-logo.png" alt="" class="logo">
     </div>  
     <div class="contactMe">
-      <a href="#">054-1234567</a>
+      <p>054-1234567</p>
     </div>  
     <div class="text-box">
       <h1 class="heading-primary">
@@ -100,7 +100,7 @@
         Your browser in not supported!
       </video>
     </div>
-    <form action="/" method="POST">
+    <form class="form" action="/" method="POST">
       <div class="heading-text">
         <h3 class="heading">
           Info
@@ -113,7 +113,7 @@
         <input class="form-control" type="email" name="email" placeholder="Email*" required />
       </div>
       <div class="mb-2">
-        <input class="form-control" type="text" name="phone" placeholder="phone">
+        <input class="form-control" type="text" name="phone" placeholder="phone*" pattern="[0-9]{10}" required />
       </div>
       <div class="mb-2">
         <textarea class="form-control" name="message" placeholder="Leave a comment here" cols="50"
