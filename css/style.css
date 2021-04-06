@@ -312,6 +312,7 @@ form button {
     top: 4.5rem;
     right: 4.5rem;
     font-size: 2rem;
+    color: #ffffff;
   }
 
   .carousel-item {
@@ -385,10 +386,6 @@ form button {
 @media (max-width: 24em) {
   .header {
     height: 130vh;
-  }
-
-  .contactMe {
-    color: white;
   }
 
   .heading-primary-sub {
