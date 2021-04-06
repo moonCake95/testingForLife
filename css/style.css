@@ -137,8 +137,6 @@ form button {
 }
 
 #form {
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   background-image:linear-gradient(
     to right top,
     hsla(0, 0%, 32%, 0.8), 
@@ -309,7 +307,7 @@ form button {
     padding: 3rem;
   }
 
-  .contactMe {
+  .contactMe a{ 
     top: 4.5rem;
     right: 4.5rem;
     font-size: 2rem;
@@ -365,7 +363,7 @@ form button {
     height: 6rem;
   }
 
-  .contactMe {
+  .contactMe a {
     font-size: 1.7rem;
   }
 
@@ -385,7 +383,7 @@ form button {
 
 @media (max-width: 24em) {
   .header {
-    height: 130vh;
+    height: 140vh;
   }
 
   .heading-primary-sub {
@@ -394,7 +392,7 @@ form button {
   }
 
   .carousel-item p {
-    width: 86%;
+    width: 90%;
   }
 
   #carouselControls {
@@ -411,7 +409,7 @@ form button {
     height: 5rem;
   }
 
-  .contactMe {
+  .contactMe a {
     top: 2.5rem;
     right: 2.5rem;
     font-size: 1.5rem;
