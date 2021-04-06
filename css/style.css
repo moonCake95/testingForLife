@@ -59,9 +59,10 @@ body {
   right: 2.5rem;
 }
 
-.contactMe p {
+.contactMe a {
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .person-logo {
@@ -312,7 +313,6 @@ form button {
     top: 4.5rem;
     right: 4.5rem;
     font-size: 2rem;
-    color: #ffffff;
   }
 
   .carousel-item {
