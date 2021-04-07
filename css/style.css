@@ -97,6 +97,7 @@ body {
   width: 70rem;
   animation-name: moveInLeftText;
   animation-duration: 4s;
+
 }
 
 /* Carousel */
@@ -122,7 +123,7 @@ body {
 }
 
 .carousel-item p {
-  width: 30%;
+  width: 23%;
   margin: 0 auto;
   font-weight: 300;
 }
@@ -153,16 +154,24 @@ form button {
 .heading {
   font-weight: 700;
   padding: 1.6rem 0 1.6rem 0;
+  margin: 0 20rem;
+  font-size: 4rem;
+}
+
+.form {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .form-control {
-  width: 100%;
+  width: 75%;
+  font-size: 1.5rem;
+  margin: 0rem 20rem .8rem 20rem;
 }
 
 .form .form-control {
   border-radius: 3px;
   transition: all .3s;
-  margin-bottom: .8rem;
 }
 
 .form .form-control:focus {
@@ -174,6 +183,12 @@ form button {
 .form-control:focus:invalid {
   border-bottom: 3px solid #ff3030; 
 }
+
+.form-control::placeholder {
+  font-size: 1.2rem;
+  color:darkgray;
+}
+
 
 .bg-video {
   position: absolute;
@@ -268,11 +283,43 @@ form button {
   }
 }
 
+@media (max-width: 90em) {
+
+  .carousel-item h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-item p {
+    font-size: 1.7rem;
+    width: 37%
+  }
+
+  .form-control {
+    margin: 0 15rem;
+  }
+}
+
 /* ///////////////////////////// 1200px //////////////////////////////////////  */
 
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
+  }
+
+  .carousel-item h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .carousel-item p {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 36%;
+  }
+
+  .form-control {
+    width: 70%;
+    margin: 0 16.6666667rem;
   }
 }
 
@@ -292,6 +339,7 @@ form button {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
 }
 
 /* ///////////////////////////////////////////////////////// */
@@ -317,34 +365,26 @@ form button {
     padding: 1rem;
   }
 
-  .carousel-item h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-
   .carousel-item p {
-    font-size: 1.6rem;
-    text-align: center;
     width: 80%;
   }
 
   .form .heading {
     font-size: 3.5rem;
+    margin: 0 10rem;
   }
 
   .form-control {
     height: 4.375rem;
     font-size: 1.8rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  input::placeholder {
-    font-size: 1.8rem;
+  .form-control::placeholder {
+    font-size: 1.7rem;
   }
-
-  textarea::placeholder {
-    font-size: 1.8rem;
-  }
-
+  
   .btn {
     font-size: 2rem;
   }
@@ -414,6 +454,7 @@ form button {
     right: 2.5rem;
     font-size: 1.5rem;
   }
+
 }
 
 /* ///////////////////////////////////////////////////////// */
